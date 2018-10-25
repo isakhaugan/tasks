@@ -1,0 +1,23 @@
+"""This script should write the first # even numbers input with the name of the script."""
+import sys
+partall = sys.argv[0]
+
+
+def main():
+#Declearing times
+    times = sys.argv[1]
+    times = int(times)
+    n = 0
+#Open and make the txt file
+    f= open ("partall.txt", "w+")
+#Write every second number (should be even)
+
+    for times in range(times):
+        n = n + 2
+        f.write ("%d\r\n" % (n))
+    #Close the file
+    f.close
+
+
+main()
+
